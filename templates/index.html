@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="../static/animate.css">
+	<link rel="stylesheet" href="../static/flexslider.css">
+	<link rel="stylesheet" href="../static/fonts/icomoon/style.css">
+
+	<link href="../static/assets/favicon.ico" rel="icon">
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../static/bootstrap.css">
+	<link rel="stylesheet" href="../static/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+<!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+
+
+<link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css">
+
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+
+
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+	<section class="site-hero" style="background-image: url(../static/assets/images/image_1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row intro-text align-items-center justify-content-center" >
+				<div class="col-md-10 text-center pt-5">
+					<h1 class="site-heading site-animate" style=" font-size: 80px; padding-bottom: 250px;" >Hello, I'm</h1>
+					
+					<a href="#" class="glitch"  data-glitch="Abhishek Verma">Abhishek verma</a>
+						
+						<span class="text_1"><b>Python Developer </b>	</span>
+					
+					</span>	
+					
+					
+					<STYle>
+						@keyframes typewriter {
+						0%, 100% {
+							width: 0;
+						}
+						20%, 80% {
+							width: 12em;
+						}
+						}
+
+						@keyframes caret {
+						0%, 100% {
+							opacity: 0;
+						}
+						80% {
+							opacity: 1;
+						}
+						}
+
+
+						@keyframes text2 {
+							0%, 50%, 100% {
+								width: 0;
+							}
+							
+							60%, 90% {
+								width: 11em;
+							}
+							}
+							@keyframes text1 {
+							0%, 50%, 100% {
+								width: 0;
+							}
+							10%, 40% {
+								width: 18em;
+							}
+							}
+							
+						
+
+							.text_1 {
+							animation: text1;
+							}
+							.text_2 {
+							animation: text2;
+							}
+
+							.text_0 {
+							overflow: hidden;
+							white-space: nowrap;
+							animation: typewriter;
+							display: inline-block;
+							position: relative;
+							animation-duration: 10s;
+							animation-timing-function: steps(25, end);
+							font-family: 'Audiowide', cursive;
+							animation-iteration-count: 0;
+							}
+
+
+							.text_0::after {
+							content: "|";
+							position:relative;
+							color:green;
+							right: 0;
+							animation: caret infinite;
+							animation-duration: 1s;
+							animation-timing-function: steps(1, end);
+							}
+
+							.text_1, .text_2 {
+							overflow: hidden;
+							font-size: 35px;
+							color:white;
+							white-space: nowrap;
+							display: inline-block;
+							position: relative;
+							animation-duration: 15s;
+							animation-timing-function: steps(25, end);
+							animation-iteration-count: infinite;
+							}
+							.text_1::after, .text_2::after {
+							content: "_";
+							position: absolute;
+							right: 0;
+							color:green;
+							animation: caret infinite;
+							animation-duration: 1s;
+							animation-timing-function: steps(1, end);
+							}
+
+					</STYle>
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- section -->
+
+
+
+
+
+
+	<section class="site-section" id="section-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="section-heading text-center col-md-12">
+					<h2>My <strong>Portfolio</strong></h2>
+				</div>
+			</div>
+			<div class="filters">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".packaging">Sona-AI</li>
+					<li data-filter=".mockup">Video Calling Software</li>
+					<li data-filter=".typography">Face-Recognition</li>
+					<li data-filter=".photography">ChatBot</li>
+				</ul>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/f1.jpg" alt="">
+							</div>
+							<a href="../static/assets/images/f1.jpg" class="img-pop-up">  
+								
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/Abhi-9610/facial-recognition.git"><h4>Face-Recognition System</h4>
+							<div class="cat">Attendence System</div>
+						</a>
+						</div>                                         
+					</div>
+					<div class="single-portfolio col-sm-4 all mockup">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/f2.jpeg" alt="">
+							</div>
+							<a href="../static/assets/images/f2.jpeg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                  
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/Abhi-9610/Sona-AI.git">
+							<h4>Sona-AI</h4>
+							<div class="cat">Backend Project</div>
+						</a>
+						</div>                                         
+					</div>                            
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/f3.png" alt="">
+							</div>
+							<a href="../static/assets/images/f3.png" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a> 
+
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/Abhi-9610/Streaming-BluePrint.git">
+							<h4>Video Calling Software</h4>
+							<div class="cat">WebSockets and Connections</div>
+							</a>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all packaging">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/f4.webp" alt="">
+							</div>
+							<a href="../static/assets/images/f4.webp" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div> 
+						<div class="p-inner">
+							<a href="https://github.com/Abhi-9610/chatbot.git">
+							<h4>ChatBot</h4>
+							<div class="cat">Natural Language Processing and ChatBot API</div>
+						</a>
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all typography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/f5.jpeg" alt="">
+							</div>
+							<a href="../static/assets/images/f5.jpeg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/Abhi-9610/Voice-Assistant.git">
+							<h4>Voice chating Bot</h4>
+							<div class="cat">PyTxt, Manual Voice commands</div>
+							</a>
+
+						</div>
+					</div>
+					<div class="single-portfolio col-sm-4 all photography">
+						<div class="relative">
+							<div class="thumb">
+								<div class="overlay overlay-bg"></div>
+								<img class="image img-fluid" src="../static/assets/images/f6.jpg" alt="">
+							</div>
+							<a href="../static/assets/images/f6.jpg" class="img-pop-up">  
+								<div class="middle">
+									<div class="text align-self-center d-flex"><img src="../static/assets/images/preview.png" alt=""></div>
+								</div>
+							</a>                                
+						</div>
+						<div class="p-inner">
+							<a href="https://github.com/Abhi-9610/one-manager.git" target="_blank">
+							<h4>One Manager APIS</h4>
+							<div class="cat">Django, Flask, and other RestAPIs</div>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- .section -->
+
+	
+	<section class="site-section " id="section-resume">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>My <strong>Resume</strong></h2>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2 class="mb-5">Education</h2>
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> Oct 2020 - May 2024</span>
+						<h3>B. Tech in Computer Science Engineering (CSE)</h3>
+						<p>
+							Rajasthan Institute of Engineering and Technology<br>
+							CGPA:  7.5
+						</p>
+						<span class="school">Jaipur,Rajasthan</span>
+					</div>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> July 2019 - Apr 2020</span>
+						<h3>Intermediate (RBSE Board)</h3>
+						<p>
+							Kiran Bal Bharti Senior Secondary School<br>
+							Percentage  78.40 %</p>
+						<span class="school">Jaipur ,Rajasthan</span>
+					</div>
+
+					<!-- <div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2015</span>
+						<h3>High School (CISCE Board)</h3>
+						<p>	St. Therese's School<br>
+							Percentage  71 %</p></p>
+						<span class="school">Padrauna</span>
+					</div> -->
+
+				</div>
+				<div class="col-md-6">
+
+
+					<h2 class="mb-5">Experience</h2>
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> Nov 2023 - Feb 2024</span>
+						<h3>Python Developer - Matply Infotech LLP </h3>
+						<p>Managing , creating new backends and working colloratively with Team in making new backends and new Projects</p>
+						<span class="school">Matply Infotech LLP , Jaipur</span>
+					</div>
+
+					<!-- <!-- <div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> March 2013</span>
+						<h3>Data Science Consultant - IIT Kanpur (Campus Haat)</h3>
+						<p>Worked on project of predicting if someone is infected by corona virus or not. Creating and deploying Ml Model into production </p>
+						<span class="school">Campus Haat</span>
+					</div> -->
+
+					<div class="resume-item mb-4">
+						<span class="date"><span class="icon-calendar"></span> May 2023 - July 2023</span>
+						<h3> Junior Application Developer - DeviCure Pvt. Ltd.</h3>
+						<p>Working on Application for both Mobile and computers and managing and making changes in them<small></small> </p>
+						<span class="school">DeviceCure Pvt. Ltd. , jaipur</span>
+					</div> -->
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</section> <!-- .section -->
+
+	<section class="site-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 align-items-center">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+					<img src="../static/assets/images/my.jpg" alt="Image placeholder" class="img-fluid">
+				</div>
+				<div class="col-lg-5 pl-lg-5">
+					<div class="section-heading">
+						<h2>About <strong>Me</strong></h2>
+					</div>
+					<p class="lead">Highly motivated and enthusiastic technology enthusiast with a strong passion for Python development. Proficient
+						in a range of programming languages and eager to apply theoretical knowledge to real-world projects..</p>
+					<p class="mb-5  "> A quick
+						learner with excellent problem-solving skills and a commitment to delivering high-quality work. Seeking an
+						opportunity to contribute to a dynamic team and develop innovative solutions.</p>
+
+					<p>
+						<a href="https://www.linkedin.com/in/abhishek-verma-admin/" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+						<a href="static\my_resume.pdf" download="my_resume.pdf" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+					</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+
+
+	<section class="site-section" id="section-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center">
+						<h2>Get <strong>In Touch</strong></h2>
+					</div>
+				</div>
+				
+				<div class="col-md-7 mb-5 mb-md-0">
+					<form action="submit_form" class="site-form" method="post">
+						<h3 class="mb-5">Get In Touch</h3>
+						<div class="form-group">
+							<input name="name" type="text" class="form-control px-3 py-4" placeholder="Your Name">
+						</div>
+						<div class="form-group">
+							<input name="email" type="email" class="form-control px-3 py-4" placeholder="Your Email">
+						</div>
+						<div class="form-group mb-5">
+							<textarea name="message" class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+						</div>
+					</form>
+					<script>
+
+						function test()
+						{
+							Swal.fire('Thanks For Contacting Me..')
+							window.scrollTo(0,document.body.scrollHeight);
+						
+						}
+						{{ code }}
+					</script>
+				</div>
+				<div class="col-md-5 pl-md-5">
+					<h3 class="mb-5">My Contact Details</h3>
+					<ul class="site-contact-details">
+						<li>
+							<span class="text-uppercase">Email</span>
+							av2935288@gmail.com
+						</li>
+						<li>
+							<span class="text-uppercase">Phone</span>
+							+91 9610927173
+						</li>
+						
+						<li>
+							<span class="text-uppercase">Address</span>
+							chandpur,Nawabganj<br>
+							Ganipur Jogpur , farrukhabad  <br>
+							India, Uttar Pradesh
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="row mb-5">
+				<div class="col-md-12 text-center">
+					<p>
+						<a href="https://github.com/Abhi-9610" class="social-item"><span class="icon-github"></span></a>				
+						<a href="https://www.linkedin.com/in/abhishek-verma-admin/" class="social-item"><span class="icon-linkedin2"></span></a>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+
+
+
+
+	<script src="../static/vendor/jquery.min.js"></script>
+	<script src="../static/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="../static/vendor/popper.min.js"></script>
+	<script src="../static/vendor/bootstrap.min.js"></script>
+
+	<script src="../static/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="../static/vendor/jquery.stellar.min.js"></script>
+	<script src="../static/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="../static/custom.js"></script>
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="../static/google-map.js"></script> -->
+
+    </body>
+    </html>
