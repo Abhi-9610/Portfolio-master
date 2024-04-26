@@ -55,9 +55,9 @@ body {
     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both 5;
   }
   
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 600px) {
     .glitch {
-      font-size: 3em;
+      font-size: 30px;
     }
   }
   @-webkit-keyframes glitch {
@@ -280,16 +280,16 @@ a {
     display: block; }
     .site-hero h1 strong {
       font-weight: 800; }
-    @media (min-width: 768px) {
+    @media (max-width: 767px) {
       .site-hero h1 {
-        font-size: 70px; } }
+        font-size: 40px; } }
   .site-hero h1, .site-hero .lead {
     font-weight: 200;
     color: #fff; }
   .site-hero .lead {
     line-height: 2; }
   .site-hero .site-subheading {
-    max-width: 640px;
+    max-width: 80%;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.5); }
 
